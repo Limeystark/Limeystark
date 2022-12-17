@@ -1,0 +1,93 @@
+@font-face {
+	font-family: philosopher;
+	src: url(fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+	font-family: mulish;
+	src: url(fonts/Mulish.ttf);
+}
+
+@font-face {
+	font-family: fugaz;
+	src: url(fonts/FugazOne-Regular.ttf);
+}
+
+body {
+	position: relative;
+	font-family: mulish;
+}
+
+.fancy-font {
+	font-family: philosopher;
+}
+
+.header {
+	background-image: url('img/top-banner.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 75vh;
+	position: relative;
+}
+
+.header .h-100 {
+	backdrop-filter: brightness(40%);
+}
+
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+.logo-example {
+	width: 100%;
+	object-fit: cover;
+}
+
+.package {
+	border-width: 3px;
+}
+
+#about, #cost, #gallery, #order {
+	scroll-margin-top: 74px;
+}
+
+.btn, .btn:hover, .btn:active {
+	background-color: #147358;
+	border: none;
+	color: white;
+}
+
+.navbar {
+	background-color: #b43455;
+}
+
+nav .navbar-nav li a {
+	color: white !important;
+}
+
+.navbar-brand, .navbar-brand:hover {
+	font-family: fugaz;
+	color: #bbd3cb;
+}
+
+.card.active {
+	border-color: #b43455;
+}
+
+header h1, header h2 {
+	color: white;
+}
+
+.border-bottom {
+	border-color: #147358 !important;
+}
+
+footer {
+	background-color: #b43455;
+}
+
+li {
+	font-size: 18px;
+}

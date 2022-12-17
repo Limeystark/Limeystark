@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>LogoMaker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand fs-2" href="#">LogoMaker</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">О нас</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cost">Цены</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Работы выпускников</a>
+					</li>
+				</ul>
+				<a href="#order" class="btn fancy-font" style="font-size: 18px;">Предзаказ</a>
+			</div>
+		</div>
+
+	</nav>
+	<header class="header" style="margin-top: 60px;">
+		<div class="d-flex align-items-center h-100 w-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="text-center fancy-font" style="font-size: 60px;">СТАНЬ ГРАФИЧЕСКИМ ДИЗАЙНЕРОМ<br>ВСЕГО ЗА 4 НЕДЕЛИ
+						</h1>
+						<h1 class="text-center fancy-font">СТАРТ 5.01</h1>
+						<div class="text-center">
+							<a href="#order" class="btn fs-1 fancy-font">Предзаказ*</a>
+						</div>
+						<p class="text-white text-center" style="font-size: 16px;">*при оформлении предзаказа до 25.12 скидка в 20%</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="about" class="py-5 border-bottom">
+			<!-- <h2 class="text-center mb-5">О нас</h2> -->
+			<div class="container">
+				<div class="row">
+					<div class="card mb-3 mx-auto col-md-10 px-0">
+						<div class="row g-0">
+							<div class="col-md-4 d-flex">
+								<img src="img/about.jpg" class="img-fluid rounded-start" style="object-fit: cover; object-position: 70% 50%">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h3 class="card-title fancy-font">О нас</h3>
+									<p class="card-text">
+									<ul>
+										<li>Мне понадобилось 12 лет, а вам достаточно всего 4 недели</li>
+										<li>Тебе понадобится всего лишь компьютер и мышка</li>
+										<li>Получи сертификат о пройденом курсе и о ваших навыках</li>
+										<li>Поможем найти первых клиентов по окончанию курса</li>
+										<li>Поможем освоить различные современные стили</li>
+										<li>Получи все нужные и полезные источники</li>
+									</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cost" class="py-5 border-bottom ">
+			<h2 class="text-center mb-5 fancy-font">Выбери подходящий пакет</h2>
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-4 py-3 px-5 d-flex" style="min-height: 300px;" onclick="selectPackage('1')">
+						<div id="package1" class="package card d-flex w-100">
+							<div class="card-body d-flex flex-column">
+								<h4 class="card-title text-center fancy-font">1 пакет</h4>
+								<ul>
+									<li>Онлайн лекции</li>
+									<li>Доступ к записям лекций</li>
+									<li>Проверка домашних заданий</li>
+								</ul>
+								<h4 class="card-title text-center mt-auto fancy-font"><s>50 €</s></h4>
+								<h3 class="card-title text-center fancy-font">40 €</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 py-3 px-5 d-flex" style="min-height: 300px;" onclick="selectPackage('2')">
+						<div id="package2" class="package card w-100">
+							<div class="card-body d-flex flex-column">
+								<h4 class="card-title text-center fancy-font">2 пакет</h4>
+								<ul>
+									<li>Онлайн лекции</li>
+									<li>Доступ к записям лекций</li>
+									<li>Проверка домашних заданий с видео коментариями об ошибках</li>
+								</ul>
+								<h4 class="card-title text-center mt-auto fancy-font"><s>75 €</s></h4>
+								<h3 class="card-title text-center fancy-font">60 €</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 py-3 px-5 d-flex" style="min-height: 300px;" onclick="selectPackage('3')">
+						<div id="package3" class="package card w-100">
+							<div class="card-body d-flex flex-column">
+								<h4 class="card-title text-center fancy-font">3 пакет</h4>
+								<ul>
+									<li>Онлайн лекции</li>
+									<li>Доступ к записям лекций</li>
+									<li>Проверка домашних заданий с видео коментариями об ошибках</li>
+									<li>Помощь в поиске клиентов</li>
+								</ul>
+								<h4 class="card-title text-center mt-auto fancy-font"><s>120 €</s></h4>
+								<h3 class="card-title text-center fancy-font">96 €</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+					<a href="#order" class="btn text-white fs-2 fancy-font">Предзаказ</a>
+				</div>
+			</div>
+		</div>
+		<div id="gallery" class="py-5 border-bottom ">
+			<h2 class="text-center mb-5 fancy-font">Работы наших выпускников</h2>
+			<div id="logosCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active px-5">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/1.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/2.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/3.PNG">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item px-5">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/4.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/5.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/6.PNG">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item px-5">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/7.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/8.PNG">
+									</div>
+								</div>
+								<div class="col-12 col-md-4 p-3">
+									<div class="ratio ratio-1x1">
+										<img class="logo-example" src="img/portfolio/9.PNG">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#logosCarousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#logosCarousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="order" class="py-5">
+			<div class="container">
+				<div class="row">
+					<form>
+						<h2 class="text-center mb-5 fancy-font">Оформи предзаказ для получения<br>скидки 20%</h2>
+						<div class="row">
+							<div class="col-md-8 px-5">
+								<div class="mb-3">
+									<input type="name" class="form-control form-control-lg" placeholder="Имя">
+								</div>
+								<div class="mb-3">
+									<input type="email" class="form-control form-control-lg" placeholder="Email"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="row">
+									<div class="col-lg-4 py-3 px-lg-4" onclick="selectPackage('1')">
+										<div id="packageSmall1" class="package card" style="padding: 5px;">
+											<div class="d-flex flex-column">
+												<h4 class="card-title text-center fancy-font">1 пакет</h4>
+												<h5 class="card-title text-center mt-auto fancy-font"><s>50 €</s></h4>
+												<h4 class="card-title text-center fancy-font mb-0">40 €</h3>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 py-3 px-lg-4" onclick="selectPackage('2')">
+										<div id="packageSmall2" class="package card" style="padding: 5px;">
+											<div class="d-flex flex-column">
+												<h4 class="card-title text-center fancy-font">2 пакет</h4>
+												<h5 class="card-title text-center mt-auto fancy-font"><s>75 €</s></h4>
+												<h4 class="card-title text-center fancy-font mb-0">60 €</h3>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 py-3 px-lg-4" onclick="selectPackage('3')">
+										<div id="packageSmall3" class="package card" style="padding: 5px;">
+											<div class="d-flex flex-column">
+												<h4 class="card-title text-center fancy-font">3 пакет</h4>
+												<h5 class="card-title text-center mt-auto fancy-font"><s>120 €</s></h4>
+												<h4 class="card-title text-center fancy-font mb-0">96 €</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 d-flex" style="height: 110px;">
+								<button type="submit"
+									class="btn fs-1 m-auto p-4 text-white fancy-font">Предзаказ</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<span class="text-white">© 2022 Nataliia Kolobylina</span>
+		</div>
+	</footer>
+</body>
+
+</html>
