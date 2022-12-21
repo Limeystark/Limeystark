@@ -1,16 +1,16 @@
 @font-face {
 	font-family: philosopher;
-	src: url(fonts/Philosopher-Regular.ttf);
+	src: url(../fonts/Philosopher-Regular.ttf);
 }
 
 @font-face {
 	font-family: mulish;
-	src: url(fonts/Mulish.ttf);
+	src: url(../fonts/Mulish.ttf);
 }
 
 @font-face {
 	font-family: fugaz;
-	src: url(fonts/FugazOne-Regular.ttf);
+	src: url(../fonts/FugazOne-Regular.ttf);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-	background-image: url('img/top-banner.jpg');
+	background-image: url('../img/top-banner.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
