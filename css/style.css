@@ -8,6 +8,11 @@
 	src: url(../fonts/DidactGothic-Regular.ttf);
 }
 
+:root {
+	--main-color: #0071e0;
+	--accent-color: #e12619;
+}
+
 body {
 	position: relative;
 	font-family: regular;
@@ -18,6 +23,7 @@ body {
 }
 
 .header {
+	background-color: black;
 	background-image: url('../img/top-banner.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -55,17 +61,17 @@ body {
 .btn:active {
 	background-color: none;
 	border-width: 2px;
-	border-color: #e05a19;
+	border-color: var(--accent-color);
 	color: white;
 }
 
 .btn:hover {
-	background-color: #e05a19;
+	background-color: var(--accent-color);
 	color: white;
 }
 
 .btn-inverted {
-	color: #e05a19 !important;
+	color: var(--accent-color) !important;
 }
 
 .btn-inverted:hover {
@@ -73,7 +79,7 @@ body {
 }
 
 .navbar {
-	background-color: #199fe0;
+	background-color: var(--main-color);
 }
 
 nav .navbar-nav li a {
@@ -86,8 +92,12 @@ nav .navbar-nav li a {
 	color: white;
 }
 
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
 .card.active {
-	border-color: #e05a19;
+	border-color: var(--accent-color);
 }
 
 header h1,
@@ -96,11 +106,11 @@ header h2 {
 }
 
 .border-bottom {
-	border-color: #e05a19 !important;
+	border-color: var(--accent-color) !important;
 }
 
 footer {
-	background-color: #199fe0;
+	background-color: var(--main-color);
 }
 
 li {
@@ -111,9 +121,13 @@ li {
 	list-style: none;
 }
 
+#aboutme li {
+	font-size: 20px;
+}
+
 #aboutme ul li::before {
 	content: "\2022";
-	color: #e05a19;
+	color: var(--accent-color);
 	font-weight: bold;
 	display: inline-block;
 	width: 1em;
@@ -121,7 +135,7 @@ li {
 }
 
 .nb {
-	color: #e05a19
+	color: var(--accent-color);
 }
 
 .regular-text {
